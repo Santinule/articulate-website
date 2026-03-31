@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: oklch(0.995 0 0);
+  --color-foreground: oklch(0.13 0 0);
+  --color-muted: oklch(0.96 0 0);
+  --color-muted-foreground: oklch(0.45 0 0);
+  --color-border: oklch(0.9 0 0);
+  --font-sans: "Chakra Petch", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme inline {
+    --color-background: oklch(0.1 0 0);
+    --color-foreground: oklch(0.95 0 0);
+    --color-muted: oklch(0.15 0 0);
+    --color-muted-foreground: oklch(0.6 0 0);
+    --color-border: oklch(0.2 0 0);
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+@keyframes nudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.nudge-animate {
+  animation: nudge 0.6s ease-in-out;
+}
