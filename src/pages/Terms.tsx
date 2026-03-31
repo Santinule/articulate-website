@@ -1,4 +1,11 @@
+import { useLayoutEffect } from 'react'
+
 export function Terms() {
+  useLayoutEffect(() => {
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+  }, [])
+
   return (
     <div className="max-w-3xl mx-auto px-8 py-16">
       <h1 className="text-3xl font-bold mb-2">Articulate — Terms of Use</h1>

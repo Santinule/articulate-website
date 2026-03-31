@@ -92,14 +92,7 @@ export function Landing() {
     <div style={{ fontFamily: helvetica, backgroundColor: c.bg, minHeight: '100vh', color: c.primary }}>
 
       {/* Nav */}
-      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 48px' }}>
-        <a
-          href="https://meshaa.io"
-          style={{ color: c.grey, fontSize: '14px', fontWeight: 300, textDecoration: 'none', letterSpacing: '0.02em', fontFamily: helvetica }}
-        >
-          meshaa
-        </a>
-      </nav>
+      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 48px' }} />
 
       {/* Hero */}
       <section style={{ maxWidth: '1100px', margin: '0 auto', padding: '80px 48px 120px' }}>
@@ -413,12 +406,6 @@ export function Landing() {
           >
             Privacy
           </Link>
-          <a
-            href="https://meshaa.io"
-            style={{ color: c.grey, fontSize: '13px', textDecoration: 'none', fontFamily: helvetica, fontWeight: 300 }}
-          >
-            meshaa.io
-          </a>
         </div>
       </footer>
     </div>
