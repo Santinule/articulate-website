@@ -11,6 +11,9 @@ export default defineConfig({
     },
   },
   preview: {
-    allowedHosts: ['articulate-website-production.up.railway.app'],
+    allowedHosts: [
+      'articulate-website-production.up.railway.app',
+      'www.articulatelearning.net',
+    ],
   },
 })
