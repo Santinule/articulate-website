@@ -1,4 +1,66 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+.strip-indicator-track {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .articulate-hero-subtitle {
+    text-align: center;
+  }
+  .strip-indicator-track {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .strip-indicator-track > div {
+    width: 80px;
+    height: 3px;
+    background-color: rgba(40, 45, 63, 0.1);
+    border-radius: 999px;
+    position: relative;
+    overflow: hidden;
+  }
+  .strip-indicator-pill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 3px;
+    border-radius: 999px;
+    background-color: #3FA7D6;
+    transition: transform 0.08s linear;
+    animation: none;
+  }
+  .strip-indicator-pill.nudge {
+    animation: strip-slide 1.4s ease-in-out 2;
+  }
+  @keyframes strip-slide {
+    0%   { transform: translateX(26px); }
+    50%  { transform: translateX(52px); }
+    100% { transform: translateX(26px); }
+  }
+  .articulate-hero-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 32px !important;
+  }
+  .articulate-hero-text {
+    padding-left: 0 !important;
+    align-items: center !important;
+    text-align: center;
+  }
+  .articulate-hero-text h1,
+  .articulate-hero-text p {
+    text-align: center;
+  }
+  .articulate-hero-text a {
+    align-self: center !important;
+  }
+}
 
 @theme inline {
   --color-background: oklch(0.995 0 0);
@@ -10,31 +72,14 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  @theme inline {
-    --color-background: oklch(0.1 0 0);
-    --color-foreground: oklch(0.95 0 0);
-    --color-muted: oklch(0.15 0 0);
-    --color-muted-foreground: oklch(0.6 0 0);
-    --color-border: oklch(0.2 0 0);
+@layer base {
+  * {
+    @apply border-border;
   }
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-}
-
-@keyframes nudge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-.nudge-animate {
-  animation: nudge 0.6s ease-in-out;
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

@@ -1,254 +1,242 @@
-import { Link } from 'react-router-dom'
-
-export default function Terms() {
+export function Terms() {
   return (
     <div className="max-w-3xl mx-auto px-8 py-16">
-      <Link
-        to="/"
-        className="text-sm text-muted-foreground hover:text-foreground mb-8 inline-block"
-      >
-        ← Articulate
-      </Link>
-
       <h1 className="text-3xl font-bold mb-2">Articulate — Terms of Use</h1>
       <div className="text-sm text-muted-foreground mb-12 space-y-1">
         <p>Effective Date: January 19, 2026</p>
         <p>Last Updated: March 23, 2026</p>
         <p>Provider: Real Intelligence Tech LLC ("Articulate," "we," "us," "our")</p>
-        <p>Contact: contact@meshaa.io</p>
+        <p>Contact: <a href="mailto:contact@meshaa.io" className="hover:text-foreground">contact@meshaa.io</a></p>
       </div>
 
-      <div className="space-y-10">
+      <div className="prose prose-neutral dark:prose-invert max-w-none space-y-8">
+        <p className="text-muted-foreground leading-relaxed">
+          These Terms of Use ("Terms") govern your access to and use of the Articulate mobile application, website (if any), and related services (collectively, the "Service"). These Terms form a legal agreement between you and Real Intelligence Tech LLC regarding your use of the Service. By downloading, accessing, or using the Service, you agree to these Terms.
+        </p>
+        <p className="text-muted-foreground leading-relaxed font-medium">
+          If you do not agree, do not use the Service.
+        </p>
+
         <section>
           <h2 className="text-xl font-semibold mb-4">1. What Articulate Is</h2>
-          <p className="text-muted-foreground leading-relaxed">
-            Articulate is a vocabulary-building iOS application developed and operated by Real
-            Intelligence Tech LLC. The app uses active learning techniques — including AI-powered
-            sentence evaluation, personalized word recommendations, and gamified progress tracking
-            — to help users expand and master their vocabulary. By downloading, installing, or using
-            Articulate, you agree to be bound by these Terms of Use.
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Articulate is a vocabulary-learning app designed to help users learn sophisticated words through an active learning approach. The Service includes:
           </p>
+          <ul className="list-disc list-inside text-muted-foreground space-y-2">
+            <li>Word cards selected by a personalized recommendation system</li>
+            <li>AI-assisted evaluation and feedback on sentence correctness and usage quality</li>
+            <li>Progress features such as medals, experience points, and achievements</li>
+          </ul>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">2. Eligibility</h2>
           <p className="text-muted-foreground leading-relaxed">
-            You must be at least 13 years old to use Articulate. If you are under 18, you confirm
-            that you have your parent's or guardian's permission. By using the app, you represent
-            and warrant that you meet these requirements. We do not knowingly collect personal
-            information from children under 13.
+            You must be at least 13 years old to use the Service. If you are under the age of majority where you live, you may use the Service only with permission of a parent or legal guardian.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">3. Accounts and Access</h2>
-          <p className="text-muted-foreground leading-relaxed mb-3">
-            To access most features of Articulate, you must create an account. You agree to:
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            You may need to create an account to use parts of the Service. You agree to:
           </p>
           <ul className="list-disc list-inside text-muted-foreground space-y-2">
-            <li>Provide accurate and current registration information</li>
-            <li>Keep your login credentials secure and confidential</li>
-            <li>Notify us immediately at contact@meshaa.io of any unauthorized use of your account</li>
-            <li>Be responsible for all activity that occurs under your account</li>
+            <li>Provide accurate information</li>
+            <li>Keep your login credentials secure</li>
+            <li>Notify us promptly of unauthorized access</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-3">
-            We reserve the right to suspend or terminate accounts that violate these Terms.
+          <p className="text-muted-foreground leading-relaxed mt-4">
+            You are responsible for activity that occurs under your account.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">4. Subscriptions, Billing, Cancellation, and Restore</h2>
 
-          <h3 className="text-lg font-medium mb-2">Subscriptions</h3>
+          <h3 className="text-lg font-medium mb-2">Subscription Required</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Articulate may offer free and paid subscription tiers. Paid subscriptions are billed
-            through Apple's App Store. Prices and billing periods are displayed at the time of
-            purchase and may be subject to applicable taxes.
+            Articulate requires an active paid subscription to access and use the Service. You may view the subscription screen and purchase options before subscribing, but core app functionality is not available without an active subscription.
           </p>
 
-          <h3 className="text-lg font-medium mb-2">Auto-Renewal</h3>
+          <h3 className="text-lg font-medium mb-2">Subscription Offer Details</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Subscriptions automatically renew unless cancelled at least 24 hours before the end of
-            the current billing period. Your Apple ID will be charged for renewal within 24 hours
-            prior to the end of the current period.
+            Before you confirm a purchase, the applicable subscription title, subscription length, and purchase price will be displayed in the app and/or through Apple's purchase flow. Prices may vary by region, currency, taxes, promotional offer, and App Store settings. The price shown to you at the time of purchase is the price that applies to your subscription.
+          </p>
+
+          <h3 className="text-lg font-medium mb-2">Billing through Apple</h3>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            If you subscribe in the iOS app, billing is handled by Apple and charged to your Apple ID. Subscription management (including cancellation) occurs through your App Store account settings.
+          </p>
+
+          <h3 className="text-lg font-medium mb-2">Renewal</h3>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Subscriptions may automatically renew unless canceled at least 24 hours before the end of the current period (as determined by Apple's rules).
           </p>
 
           <h3 className="text-lg font-medium mb-2">Cancellation</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            You may cancel your subscription at any time through your Apple ID account settings.
-            Cancellation takes effect at the end of the current billing period — you will continue
-            to have access until then. We do not offer refunds for partial subscription periods
-            except as required by applicable law.
+            You can cancel anytime in your Apple ID subscription settings. Cancellation stops future renewals; you typically retain access until the end of the paid period.
           </p>
 
           <h3 className="text-lg font-medium mb-2">Restore Purchases</h3>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            If you previously subscribed, you can use Restore Purchases to re-sync your entitlements on a device (for example, after reinstalling the app). Restoring does not guarantee access if your subscription is expired or if you are signed into a different Apple ID than the one used to purchase.
+          </p>
+
+          <h3 className="text-lg font-medium mb-2">Refunds</h3>
           <p className="text-muted-foreground leading-relaxed">
-            If you reinstall the app or switch devices, you can restore your previous purchases
-            using the "Restore Purchases" option within the app. Your Apple ID must be the same
-            account used for the original purchase.
+            Refund requests are handled by Apple under Apple's policies. We generally cannot issue App Store refunds directly.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">5. User Content (Your Writing) and Permissions</h2>
-          <p className="text-muted-foreground leading-relaxed mb-3">
-            Articulate's core feature requires you to write original sentences using vocabulary
-            words. You retain ownership of any content you create. By submitting content, you grant
-            Real Intelligence Tech LLC a limited, non-exclusive, royalty-free license to:
+
+          <h3 className="text-lg font-medium mb-2">Your Content</h3>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            You may submit content to the Service, including sentences you write ("User Content"). You retain ownership of your User Content.
+          </p>
+
+          <h3 className="text-lg font-medium mb-2">License You Grant Us</h3>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            To operate and improve the Service, you grant us a worldwide, non-exclusive, royalty-free license to host, store, process, display, and analyze your User Content solely for:
+          </p>
+          <ul className="list-disc list-inside text-muted-foreground space-y-2 mb-4">
+            <li>Providing the Service (including AI evaluation and feedback)</li>
+            <li>Maintaining and securing the Service</li>
+            <li>Improving features and learning experience (including model and recommendation improvements), where permitted by law and consistent with our Privacy Policy</li>
+          </ul>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            You can request deletion of your account and associated data as described in our Privacy Policy.
+          </p>
+
+          <h3 className="text-lg font-medium mb-2">Content Rules</h3>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            You agree not to submit User Content that:
           </p>
           <ul className="list-disc list-inside text-muted-foreground space-y-2">
-            <li>Process and evaluate your sentences using AI systems</li>
-            <li>Store your content to provide the service and personalize your experience</li>
-            <li>Use anonymized or aggregated content to improve our AI models and educational features</li>
+            <li>Is illegal, threatening, harassing, or hateful</li>
+            <li>Infringes someone else's rights</li>
+            <li>Contains malware or attempts to exploit the Service</li>
+            <li>Attempts to reverse engineer, probe, or attack the Service</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-3">
-            You are responsible for ensuring that your submitted content does not violate any laws
-            or third-party rights. Do not submit content that is offensive, illegal, or harmful.
-          </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">6. AI Evaluation and Educational Disclaimer</h2>
-          <p className="text-muted-foreground leading-relaxed mb-3">
-            Articulate uses AI systems (including Claude by Anthropic and Gemini by Google) to
-            evaluate your sentence submissions. Please understand:
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Articulate uses automated systems to evaluate writing and provide feedback. You understand and agree:
           </p>
           <ul className="list-disc list-inside text-muted-foreground space-y-2">
-            <li>AI evaluations are for educational purposes only and may not be perfect</li>
-            <li>Feedback is meant to guide learning, not serve as authoritative linguistic judgment</li>
-            <li>We continuously work to improve accuracy but cannot guarantee error-free evaluations</li>
+            <li>AI feedback may be incorrect, incomplete, or inappropriate for your specific context.</li>
+            <li>The Service is for educational purposes and does not guarantee outcomes (test scores, job results, etc.).</li>
+            <li>You are responsible for how you use the feedback and for your final writing decisions.</li>
           </ul>
-          <p className="text-muted-foreground leading-relaxed mt-3">
-            Articulate is an educational tool and should not be used as a substitute for
-            professional language instruction.
-          </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">7. Personalized Recommendations</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Articulate selects word cards using personalization signals such as onboarding answers, word survey responses, and gameplay activity. Personalization is designed to improve relevance, but it may not always match your preferences. You can adjust behavior by changing how you interact with the Service.
+          </p>
           <p className="text-muted-foreground leading-relaxed">
-            Our word recommendation algorithm uses your onboarding responses, play history, and
-            performance data to personalize the vocabulary words presented to you. This
-            personalization is core to the Articulate experience. By using the app, you consent to
-            this processing of your usage data for recommendation purposes.
+            Details about data used for personalization are provided in the Privacy Policy.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">8. Intellectual Property</h2>
-          <p className="text-muted-foreground leading-relaxed mb-3">
-            All content, features, and functionality of Articulate — including but not limited to
-            software, design, text, graphics, word lists, and educational content — are owned by
-            Real Intelligence Tech LLC or its licensors and are protected by intellectual property
-            laws.
-          </p>
           <p className="text-muted-foreground leading-relaxed">
-            You may not copy, modify, distribute, sell, or create derivative works from any part
-            of the app without our express written permission.
+            We and our licensors own the Service and all related intellectual property, including app design, text (excluding your User Content), graphics, logos, and software. You may not copy, modify, distribute, sell, lease, or reverse engineer any part of the Service except as allowed by law.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">9. Third-Party Services and Links</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Articulate integrates with and may link to third-party services including Apple's App
-            Store, Anthropic (Claude AI), and Google (Gemini AI). We are not responsible for the
-            privacy practices or content of these third-party services. Your use of third-party
-            services is governed by their respective terms and privacy policies.
+            The Service may rely on third-party services (e.g., analytics, crash reporting, infrastructure). We are not responsible for third-party services outside our control. If the Service links to third-party websites, we do not endorse them and are not responsible for their content or practices.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">10. Acceptable Use</h2>
-          <p className="text-muted-foreground leading-relaxed mb-3">You agree not to:</p>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            You agree not to:
+          </p>
           <ul className="list-disc list-inside text-muted-foreground space-y-2">
-            <li>Use the app for any unlawful purpose or in violation of these Terms</li>
-            <li>Attempt to gain unauthorized access to any part of the app or its infrastructure</li>
-            <li>Reverse engineer, decompile, or disassemble any part of the app</li>
-            <li>Use automated tools to interact with the app (bots, scrapers, etc.)</li>
-            <li>Submit content that is hateful, abusive, defamatory, or otherwise harmful</li>
-            <li>Interfere with the proper functioning of the service</li>
+            <li>Use the Service to violate laws or regulations</li>
+            <li>Attempt unauthorized access to systems or accounts</li>
+            <li>Scrape, crawl, or bulk-export content</li>
+            <li>Interfere with the Service's operation (spam, abuse, load testing without permission)</li>
+            <li>Use the Service to generate or distribute harmful or illegal content</li>
           </ul>
+          <p className="text-muted-foreground leading-relaxed mt-4">
+            We may suspend or terminate access for violations.
+          </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">11. Termination</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            You may stop using the Service at any time. We may suspend or terminate your account if you violate these Terms or if we must do so to comply with law or protect the Service.
+          </p>
           <p className="text-muted-foreground leading-relaxed">
-            We may suspend or terminate your access to Articulate at any time, with or without
-            cause, and with or without notice, if we believe you have violated these Terms or for
-            any other business reason. You may terminate your account at any time by contacting us
-            at contact@meshaa.io. Upon termination, your right to use the app ceases immediately.
+            Termination does not automatically cancel an App Store subscription—you must cancel through Apple.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">12. Disclaimers</h2>
           <p className="text-muted-foreground leading-relaxed">
-            ARTICULATE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND,
-            EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
-            FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP
-            WILL BE UNINTERRUPTED, ERROR-FREE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
-            YOUR USE OF THE APP IS AT YOUR SOLE RISK.
+            THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE." TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE ERROR-FREE OR UNINTERRUPTED.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">13. Limitation of Liability</h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, ARTICULATE AND ITS AFFILIATES WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE.
+          </p>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THE SERVICE WILL NOT EXCEED THE AMOUNT YOU PAID TO US (IF ANY) IN THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM.
+          </p>
           <p className="text-muted-foreground leading-relaxed">
-            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, REAL INTELLIGENCE TECH LLC AND ITS
-            OFFICERS, DIRECTORS, EMPLOYEES, AND AGENTS SHALL NOT BE LIABLE FOR ANY INDIRECT,
-            INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS,
-            DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF ARTICULATE, EVEN IF WE
-            HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. OUR TOTAL LIABILITY TO YOU SHALL
-            NOT EXCEED THE AMOUNT YOU PAID US IN THE TWELVE MONTHS PRECEDING THE CLAIM.
+            (Some jurisdictions do not allow certain limitations, so some of the above may not apply to you.)
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">14. Indemnification</h2>
           <p className="text-muted-foreground leading-relaxed">
-            You agree to indemnify, defend, and hold harmless Real Intelligence Tech LLC and its
-            officers, directors, employees, and agents from and against any claims, liabilities,
-            damages, losses, and expenses, including reasonable attorneys' fees, arising out of or
-            in any way connected with your access to or use of the app, your content, or your
-            violation of these Terms.
+            If you use the Service in violation of these Terms, or you submit User Content that violates laws or third-party rights, you agree to defend and indemnify us from claims, damages, and expenses (including reasonable legal fees) arising from that misuse.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">15. Changes to the Service or Terms</h2>
           <p className="text-muted-foreground leading-relaxed">
-            We reserve the right to modify these Terms at any time. We will notify you of material
-            changes by updating the "Last Updated" date at the top of this page and, where
-            appropriate, through in-app notifications. Your continued use of Articulate after any
-            changes constitutes your acceptance of the new Terms.
+            We may update the Service and these Terms from time to time. If changes are material, we will provide reasonable notice (for example, in-app notice or updating the "Last Updated" date). Continued use after changes means you accept the updated Terms.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">16. Governing Law</h2>
           <p className="text-muted-foreground leading-relaxed">
-            These Terms are governed by and construed in accordance with the laws of the State of
-            Delaware, United States, without regard to its conflict of law provisions. Any disputes
-            arising under these Terms shall be subject to the exclusive jurisdiction of the courts
-            located in Delaware.
+            These Terms are governed by the laws of the State of Delaware, United States, excluding conflict of law rules. Any disputes will be brought in the courts located in the State of Delaware, unless applicable law requires otherwise.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold mb-4">17. Contact</h2>
-          <p className="text-muted-foreground leading-relaxed mb-3">
-            If you have any questions about these Terms, please contact us:
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Questions about these Terms: <a href="mailto:contact@meshaa.io" className="hover:text-foreground">contact@meshaa.io</a>
           </p>
           <div className="text-muted-foreground space-y-1">
-            <p className="font-medium text-foreground">Real Intelligence Tech LLC</p>
+            <p><strong>Real Intelligence Tech LLC</strong></p>
+            <p className="mt-2"><strong>Address</strong></p>
             <p>800 N King Street, Suite 304-1716</p>
             <p>Wilmington, DE 19801, United States</p>
-            <p>
-              <a href="mailto:contact@meshaa.io" className="text-foreground hover:underline">
-                contact@meshaa.io
-              </a>
-            </p>
           </div>
         </section>
       </div>
