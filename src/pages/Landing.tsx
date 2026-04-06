@@ -138,7 +138,7 @@ export function Landing() {
               Learn sophisticated words through active learning, personalized recommendations, and an AI grader for every word you want to master.
             </p>
             <a
-              href="https://apps.apple.com/app/idPLACEHOLDER"
+              href="https://apps.apple.com/us/app/articulate-vocabulary-mastery/id6759561001"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -350,7 +350,7 @@ export function Landing() {
           Available on iOS.
         </p>
         <a
-          href="https://apps.apple.com/app/idPLACEHOLDER"
+          href="https://apps.apple.com/us/app/articulate-vocabulary-mastery/id6759561001"
           target="_blank"
           rel="noopener noreferrer"
           style={{
