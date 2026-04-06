@@ -34,7 +34,7 @@ export function Privacy() {
 
           <h3 className="text-lg font-medium mb-2">Learning and Interaction Data</h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            The Service is designed to adapt to your individual learning patterns. As you use Articulate, we collect information relating to your engagement with the Service, including but not limited to: words you have reviewed or encountered, sentences you submit for evaluation, responses and results from AI-assisted feedback, your progression data (including experience points, medals, and achievements), session frequency and duration, feature engagement patterns, and onboarding and survey responses. This information is integral to the operation of the personalization and recommendation systems within the Service, and is further used as described in Section 2 of this Policy.
+            The Service is designed to adapt to your individual learning patterns. As you use Articulate, we collect information relating to your engagement with the Service, including but not limited to: words you have reviewed or encountered, sentences you submit for evaluation, responses and results from AI-assisted feedback, your progression data (including experience points, medals, and achievements), feature engagement patterns, and onboarding and survey responses. This information is integral to the operation of the personalization and recommendation systems within the Service, and is further used as described in Section 2 of this Policy.
           </p>
 
           <h3 className="text-lg font-medium mb-2">Device and Technical Data</h3>
