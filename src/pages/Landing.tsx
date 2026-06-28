@@ -12,8 +12,18 @@ const c = {
 const akshar = "'Akshar', sans-serif"
 const helvetica = "Helvetica, Arial, sans-serif"
 
-const ASPECT = 2868 / 1320
-const screenshots = ['/screenshots/02.png', '/screenshots/03.png', '/screenshots/01.png', '/screenshots/04.png', '/screenshots/05.png', '/screenshots/06.png']
+const ASPECT = 2688 / 1242
+const screenshots = [
+  '/scrrenshots_v2/AI Feedback.jpg',
+  '/scrrenshots_v2/Get Feedback.jpg',
+  '/scrrenshots_v2/Play & Learn Vocabulary.jpg',
+  '/scrrenshots_v2/Earn Achivements.jpg',
+  '/scrrenshots_v2/Earn Rewards.jpg',
+  '/scrrenshots_v2/Express Differently.jpg',
+  '/scrrenshots_v2/Learn It In Context.jpg',
+  '/scrrenshots_v2/Track Your Progress.jpg',
+  '/scrrenshots_v2/Your Dictionary.jpg',
+]
 
 function PhoneMockup({ src, width }: { src: string; width: number }) {
   const height = Math.round(width * ASPECT)
@@ -208,8 +218,9 @@ export function Landing() {
                 }}
               >
                 {screenshots.map((src, i) => {
-                  const widths = [160, 172, 188, 188, 172, 160]
-                  return <PhoneMockup key={src} src={src} width={widths[i] ?? 172} />
+                  const distFromCenter = Math.abs(i - 4)
+                  const widthByDist = [220, 195, 172, 152, 134]
+                  return <PhoneMockup key={src} src={src} width={widthByDist[distFromCenter]} />
                 })}
               </div>
             </div>
