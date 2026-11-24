@@ -2,13 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/articulate-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Articulate — Master Your Vocabulary</title>
-    <meta name="description" content="Articulate is a vocabulary-building app grounded in the active learning paradigm. Turn your vocabulary into your greatest asset." />
+    <title>Articulate: learn new words by using them</title>
+    <meta
+      name="description"
+      content="Articulate is an iOS app for building your vocabulary through active learning: quick word games and sentences you write yourself."
+    />
+    <!-- The site has its own light and dark themes; this also tells dark-mode extensions to leave it alone -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f8f6f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#2b2f3d" media="(prefers-color-scheme: dark)" />
+    <!-- A theme pinned in the footer's Appearance switch applies before the first paint (src/lib/theme.ts) -->
+    <script>
+      try {
+        var t = localStorage.getItem('articulate-theme')
+        if (t === 'light' || t === 'dark') {
+          document.documentElement.dataset.theme = t
+          document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+            m.content = t === 'dark' ? '#2b2f3d' : '#f8f6f1'
+          })
+        }
+      } catch (e) {}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/articulate-icon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6759561001" />
+
+    <!-- Sharing previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Articulate" />
+    <meta property="og:title" content="Articulate: learn new words by using them" />
+    <meta
+      property="og:description"
+      content="Quick word games and sentences you write yourself. Available on iPhone."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Articulate: learn new words by using them" />
+    <meta
+      name="twitter:description"
+      content="Quick word games and sentences you write yourself. Available on iPhone."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Articulate: Vocabulary Mastery",
+        "operatingSystem": "iOS",
+        "applicationCategory": "EducationalApplication",
+        "description": "Build your vocabulary through active learning: quick word games and sentences you write yourself.",
+        "installUrl": "https://apps.apple.com/us/app/articulate-vocabulary-mastery/id6759561001",
+        "publisher": { "@type": "Organization", "name": "Real Intelligence Tech LLC" }
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@400;500;600;700&family=Caveat+Brush&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>

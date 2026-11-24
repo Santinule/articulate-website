@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Articulate cursor: lavender arrow, ink outline and a paper shine (app icon style).
+       A white halo underneath keeps it visible on dark cards. -->
+  <path d="M5.6 3.6 L5.6 24.2 L10.7 19.6 L14.2 27.2 L18.1 25.4 L14.7 18 L21.4 18 Z" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M5.6 3.6 L5.6 24.2 L10.7 19.6 L14.2 27.2 L18.1 25.4 L14.7 18 L21.4 18 Z" fill="#D7C6E2" stroke="#282D3F" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M8.2 9 L8.2 15.4" fill="none" stroke="#F8F6F1" stroke-width="1.7" stroke-linecap="round"/>
+</svg>
