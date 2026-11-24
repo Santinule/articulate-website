@@ -1606,6 +1606,18 @@ button:disabled {
   }
 }
 
+/* The manifesto quote on the landing page, signed in the handwritten type of the notes. */
+.manifesto-quote {
+  line-height: 1.12;
+}
+.manifesto-by {
+  margin-top: 1.6rem;
+  font-family: var(--font-hand);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.2;
+  color: var(--color-note);
+}
+
 /* ---------- One-time micro-animations (useReveal sets data-shown) ---------- */
 /* --reveal-delay staggers things that appear together. */
 [data-reveal] {

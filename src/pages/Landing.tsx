@@ -258,6 +258,22 @@ function MakeItYours() {
   )
 }
 
+/* ---------------- What Articulate is about ---------------- */
+
+function Manifesto() {
+  return (
+    <Section className="pb-4 sm:pb-6">
+      <figure className="mx-auto max-w-[52rem] text-center">
+        <blockquote data-reveal="rise" className="display manifesto-quote text-[clamp(2rem,4.6vw,3.5rem)]">
+          {/* no swoosh: mid-sentence, it would run into the next line */}
+          Learn the way you <Emph>actually learn</Emph> and elevate your vocabulary with Articulate.
+        </blockquote>
+        <figcaption className="manifesto-by">— Designed by students and scientists.</figcaption>
+      </figure>
+    </Section>
+  )
+}
+
 /* ---------------- Try it for free ---------------- */
 
 function TryFree() {
@@ -347,6 +363,7 @@ export function Landing() {
       <Progress />
       <Topics />
       <MakeItYours />
+      <Manifesto />
       <TryFree />
       <FaqSection />
       <FinalCta />
