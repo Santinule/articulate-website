@@ -78,7 +78,7 @@ export function MobileAppBar() {
               {APP_RATING}
             </span>
           </span>
-          <span className="mt-1.5 block whitespace-nowrap text-[0.95rem] leading-none text-ink-soft">{APP_DOWNLOADS} downloads</span>
+          <span className="mt-1.5 block whitespace-nowrap text-[0.95rem] leading-none text-ink-soft">{APP_DOWNLOADS} users</span>
         </span>
         <span className="btn btn-ink btn-sm shrink-0" aria-hidden="true">
           <AppleIcon className="size-[18px]" />
