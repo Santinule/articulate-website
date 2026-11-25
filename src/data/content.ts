@@ -110,7 +110,7 @@ export const topics = [
   { name: 'Slang & Modern Speech', icon: 'slang-modern-speech' },
   { name: 'Society & Human Behavior', icon: 'society-human-behavior' },
   { name: 'Technology & Computing', icon: 'technology-computing' },
-  { name: 'AI & Video Prompting', icon: 'ai-video-prompting' },
+  { name: 'AI Video Prompting', icon: 'ai-video-prompting' },
 ]
 
 export type Faq = { q: string; a: string }
